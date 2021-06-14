@@ -1,0 +1,6 @@
+framework module Pods_BaseNetwork_BaseNetworkUITests {
+  umbrella header "Pods-BaseNetwork-BaseNetworkUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

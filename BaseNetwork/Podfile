@@ -1,0 +1,26 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'BaseNetwork' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Used for making HTTP Requests
+  pod 'Alamofire'
+
+  # Used for parsing JSOn in simple ways
+  pod 'SwiftyJSON', '~> 4.0'
+
+  pod 'RxSwift', '~> 5'
+  # Pods for BaseNetwork
+
+  target 'BaseNetworkTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'BaseNetworkUITests' do
+    # Pods for testing
+  end
+
+end
