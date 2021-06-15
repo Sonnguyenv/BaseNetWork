@@ -29,7 +29,7 @@ class ListLectureAPI: API<[Repository]> {
     // parameters of the ListLectureAPI api
     override func params() -> Parameters {
         var queryParameters: [String: Any] = ["sort": "stars", "order": "desc", "page": 1]
-        queryParameters["q"] = "language:Swift"
+        queryParameters["q"] = "language:Swif"
         return queryParameters
     }
 

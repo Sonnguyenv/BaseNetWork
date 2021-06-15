@@ -33,6 +33,9 @@ class PresenterMain {
             let values = list.map({$0.fullName ?? ""})
             self.view?.getText(values)
             self.view?.onDismissProgress?()
+        } onError: { Error in
+            self.view?.handleError(Error, option: nil)
+            self.view?.onDismissProgress?()
         } onCompleted: {
             print("Done")
             self.view?.onDismissProgress?()
