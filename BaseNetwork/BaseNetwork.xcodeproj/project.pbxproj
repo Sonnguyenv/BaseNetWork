@@ -21,6 +21,18 @@
 		020FA9012677C1140077C01D /* ApiErrorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020FA9002677C1140077C01D /* ApiErrorResult.swift */; };
 		020FA9032677C18F0077C01D /* ListLectureAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020FA9022677C18F0077C01D /* ListLectureAPI.swift */; };
 		02E52B39547C5A2CC1C98280 /* Pods_BaseNetworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B6B17E800D9DCA4CC576CF /* Pods_BaseNetworkTests.framework */; };
+		22476D842678971B00482BE1 /* PresenterMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22476D832678971B00482BE1 /* PresenterMain.swift */; };
+		22476D86267898E800482BE1 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22476D85267898E800482BE1 /* Presenter.swift */; };
+		22476D882678992C00482BE1 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22476D872678992C00482BE1 /* ListView.swift */; };
+		22476D8A2678995400482BE1 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22476D892678995400482BE1 /* BaseView.swift */; };
+		22476D8C26789CFE00482BE1 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22476D8B26789CFE00482BE1 /* BaseVC.swift */; };
+		22476D8E26789F0800482BE1 /* PresenterNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22476D8D26789F0800482BE1 /* PresenterNew.swift */; };
+		22476D902678A54F00482BE1 /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22476D8F2678A54F00482BE1 /* SpinnerViewController.swift */; };
+		22476D932678A85900482BE1 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22476D912678A85900482BE1 /* ViewController2.swift */; };
+		22476D942678A85900482BE1 /* ViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22476D922678A85900482BE1 /* ViewController2.xib */; };
+		22476D972678AFF600482BE1 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22476D952678AFF600482BE1 /* TableViewCell.swift */; };
+		22476D982678AFF600482BE1 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22476D962678AFF600482BE1 /* TableViewCell.xib */; };
+		22476D9A2678B31B00482BE1 /* ActivityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22476D992678B31B00482BE1 /* ActivityVC.swift */; };
 		298A99CF89A1AB2436328F4D /* Pods_BaseNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50DDDCBA4B9E6986178833FB /* Pods_BaseNetwork.framework */; };
 		D8384AF7FFC633762DE75897 /* Pods_BaseNetwork_BaseNetworkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19AE6F93FFA8F4E48837CD16 /* Pods_BaseNetwork_BaseNetworkUITests.framework */; };
 /* End PBXBuildFile section */
@@ -63,6 +75,18 @@
 		020FA9002677C1140077C01D /* ApiErrorResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiErrorResult.swift; sourceTree = "<group>"; };
 		020FA9022677C18F0077C01D /* ListLectureAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLectureAPI.swift; sourceTree = "<group>"; };
 		19AE6F93FFA8F4E48837CD16 /* Pods_BaseNetwork_BaseNetworkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseNetwork_BaseNetworkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22476D832678971B00482BE1 /* PresenterMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterMain.swift; sourceTree = "<group>"; };
+		22476D85267898E800482BE1 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		22476D872678992C00482BE1 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		22476D892678995400482BE1 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		22476D8B26789CFE00482BE1 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		22476D8D26789F0800482BE1 /* PresenterNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterNew.swift; sourceTree = "<group>"; };
+		22476D8F2678A54F00482BE1 /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
+		22476D912678A85900482BE1 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		22476D922678A85900482BE1 /* ViewController2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController2.xib; sourceTree = "<group>"; };
+		22476D952678AFF600482BE1 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		22476D962678AFF600482BE1 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		22476D992678B31B00482BE1 /* ActivityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityVC.swift; sourceTree = "<group>"; };
 		3727538DEB651A1F62B44601 /* Pods-BaseNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseNetwork.release.xcconfig"; path = "Target Support Files/Pods-BaseNetwork/Pods-BaseNetwork.release.xcconfig"; sourceTree = "<group>"; };
 		50DDDCBA4B9E6986178833FB /* Pods_BaseNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B6B17E800D9DCA4CC576CF /* Pods_BaseNetworkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseNetworkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,13 +151,25 @@
 			isa = PBXGroup;
 			children = (
 				020FA8F72677B2440077C01D /* Network */,
+				22476D8F2678A54F00482BE1 /* SpinnerViewController.swift */,
+				22476D8B26789CFE00482BE1 /* BaseVC.swift */,
 				020FA8C72677B1FE0077C01D /* AppDelegate.swift */,
 				020FA8C92677B1FE0077C01D /* SceneDelegate.swift */,
+				22476D892678995400482BE1 /* BaseView.swift */,
+				22476D872678992C00482BE1 /* ListView.swift */,
+				22476D85267898E800482BE1 /* Presenter.swift */,
+				22476D832678971B00482BE1 /* PresenterMain.swift */,
+				22476D8D26789F0800482BE1 /* PresenterNew.swift */,
 				020FA8CB2677B1FE0077C01D /* ViewController.swift */,
 				020FA8CD2677B1FE0077C01D /* Main.storyboard */,
 				020FA8D02677B1FF0077C01D /* Assets.xcassets */,
 				020FA8D22677B1FF0077C01D /* LaunchScreen.storyboard */,
 				020FA8D52677B1FF0077C01D /* Info.plist */,
+				22476D912678A85900482BE1 /* ViewController2.swift */,
+				22476D922678A85900482BE1 /* ViewController2.xib */,
+				22476D952678AFF600482BE1 /* TableViewCell.swift */,
+				22476D962678AFF600482BE1 /* TableViewCell.xib */,
+				22476D992678B31B00482BE1 /* ActivityVC.swift */,
 			);
 			path = BaseNetwork;
 			sourceTree = "<group>";
@@ -300,6 +336,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				020FA8D42677B1FF0077C01D /* LaunchScreen.storyboard in Resources */,
+				22476D982678AFF600482BE1 /* TableViewCell.xib in Resources */,
+				22476D942678A85900482BE1 /* ViewController2.xib in Resources */,
 				020FA8D12677B1FF0077C01D /* Assets.xcassets in Resources */,
 				020FA8CF2677B1FE0077C01D /* Main.storyboard in Resources */,
 			);
@@ -429,12 +467,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22476D842678971B00482BE1 /* PresenterMain.swift in Sources */,
+				22476D932678A85900482BE1 /* ViewController2.swift in Sources */,
 				020FA8FF2677C0DD0077C01D /* ApiError.swift in Sources */,
+				22476D9A2678B31B00482BE1 /* ActivityVC.swift in Sources */,
 				020FA8CC2677B1FE0077C01D /* ViewController.swift in Sources */,
+				22476D8A2678995400482BE1 /* BaseView.swift in Sources */,
+				22476D902678A54F00482BE1 /* SpinnerViewController.swift in Sources */,
 				020FA9032677C18F0077C01D /* ListLectureAPI.swift in Sources */,
+				22476D8C26789CFE00482BE1 /* BaseVC.swift in Sources */,
+				22476D86267898E800482BE1 /* Presenter.swift in Sources */,
 				020FA9012677C1140077C01D /* ApiErrorResult.swift in Sources */,
 				020FA8C82677B1FE0077C01D /* AppDelegate.swift in Sources */,
+				22476D8E26789F0800482BE1 /* PresenterNew.swift in Sources */,
 				020FA8CA2677B1FE0077C01D /* SceneDelegate.swift in Sources */,
+				22476D882678992C00482BE1 /* ListView.swift in Sources */,
+				22476D972678AFF600482BE1 /* TableViewCell.swift in Sources */,
 				020FA8FD2677BFDE0077C01D /* API.swift in Sources */,
 				020FA8FB2677BAA60077C01D /* ApiUrls.swift in Sources */,
 			);
