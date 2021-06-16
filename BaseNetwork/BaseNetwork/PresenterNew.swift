@@ -8,35 +8,30 @@
 import Foundation
 import RxSwift
 
-protocol PassDelegate: AnyObject {
-    func onShowProgress()
-    func onDismissProgress()
-    func getText(_ text: String)
+protocol ListViewNew: BaseView {
+    func getText(_ datas: [String])
 }
 
 class PresenterNew {
 
-    weak var delegate: PassDelegate?
-    var service: ListLectureAPI!
-
+    weak var view: ListViewNew?
     let disposeBag = DisposeBag()
 
-    init(view: PassDelegate, service: ListLectureAPI) {
-        self.delegate = view
-        self.service = service
+    init(view: ListViewNew) {
+        self.view = view
         self.loadAPI()
     }
 
     func loadAPI() {
-        self.delegate?.onShowProgress()
-        service.request().subscribe { list in
+        self.view?.onShowProgress?()
+        ListLectureAPI().request().subscribe { list in
             print(list)
-            let value = list.map({$0.fullName ?? ""}).joined(separator: "\n")
-            self.delegate?.getText(value)
-            self.delegate?.onDismissProgress()
+            let value = list.map({$0.fullName ?? ""})
+            self.view?.getText(value)
+            self.view?.onDismissProgress?()
         } onCompleted: {
             print("Done")
-            self.delegate?.onDismissProgress()
+            self.view?.onDismissProgress?()
         }.disposed(by: disposeBag)
     }
 }
