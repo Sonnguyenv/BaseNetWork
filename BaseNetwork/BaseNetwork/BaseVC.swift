@@ -13,7 +13,15 @@ class BaseVC: UIViewController, BaseView {
     let child = SpinnerViewController()
     
     func handleError(_ error: Error, option: Any?) {
-        print(error)
+        let dialogMessage = UIAlertController(title: "Errors",
+                                              message: error.localizedDescription,
+                                              preferredStyle: .alert)
+
+        let action = UIAlertAction(title: "Ok", style: .default, handler: { (action)  in
+            self.dismiss(animated: false, completion: nil)
+         })
+        dialogMessage.addAction(action)
+        self.present(dialogMessage, animated: false, completion: nil)
     }
 
     func onLogoutCompleted() {

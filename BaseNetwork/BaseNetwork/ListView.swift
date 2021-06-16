@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol ListView: BaseView {
-    func getText(_ datas: [String])
-}
+//protocol ListView: BaseView {
+//    func getText(_ datas: [String])
+//}

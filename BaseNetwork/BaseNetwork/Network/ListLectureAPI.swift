@@ -29,7 +29,7 @@ class ListLectureAPI: API<[Repository]> {
     // parameters of the ListLectureAPI api
     override func params() -> Parameters {
         var queryParameters: [String: Any] = ["sort": "stars", "order": "desc", "page": 1]
-        queryParameters["q"] = "language:Swif"
+        queryParameters["q"] = "language:Swift"
         return queryParameters
     }
 
@@ -65,13 +65,3 @@ class Repository: Codable {
         self.description = val[CodingKeys.description.stringValue] as? String
     }
 }
-
-// MARK: - Decodable
-//extension Repository: Decodable {
-//  init(from decoder: Decoder) throws {
-//    let container = try decoder.container(keyedBy: CodingKeys.self)
-//    name = try container.decode(String.self, forKey: .name)
-//    fullName = try container.decode(String.self, forKey: .fullName)
-//    description = try? container.decode(String.self, forKey: .description)
-//  }
-//}
