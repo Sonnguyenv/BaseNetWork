@@ -33,6 +33,12 @@
 		22476D972678AFF600482BE1 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22476D952678AFF600482BE1 /* TableViewCell.swift */; };
 		22476D982678AFF600482BE1 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22476D962678AFF600482BE1 /* TableViewCell.xib */; };
 		22476D9A2678B31B00482BE1 /* ActivityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22476D992678B31B00482BE1 /* ActivityVC.swift */; };
+		22D417582683230D0022F959 /* HistoryOrderAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D417572683230D0022F959 /* HistoryOrderAPI.swift */; };
+		22D4175A268329510022F959 /* AllOrderAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D41759268329510022F959 /* AllOrderAPI.swift */; };
+		22D4175C268329EC0022F959 /* NewBuyCoinAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D4175B268329EC0022F959 /* NewBuyCoinAPI.swift */; };
+		22D4175E268329FC0022F959 /* NewSellCoinAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D4175D268329FC0022F959 /* NewSellCoinAPI.swift */; };
+		22D4176026832A950022F959 /* ParamBuySellCoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D4175F26832A950022F959 /* ParamBuySellCoin.swift */; };
+		22D4176226832D3B0022F959 /* PresenterOder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D4176126832D3B0022F959 /* PresenterOder.swift */; };
 		298A99CF89A1AB2436328F4D /* Pods_BaseNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50DDDCBA4B9E6986178833FB /* Pods_BaseNetwork.framework */; };
 		D8384AF7FFC633762DE75897 /* Pods_BaseNetwork_BaseNetworkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19AE6F93FFA8F4E48837CD16 /* Pods_BaseNetwork_BaseNetworkUITests.framework */; };
 /* End PBXBuildFile section */
@@ -87,6 +93,12 @@
 		22476D952678AFF600482BE1 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		22476D962678AFF600482BE1 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		22476D992678B31B00482BE1 /* ActivityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityVC.swift; sourceTree = "<group>"; };
+		22D417572683230D0022F959 /* HistoryOrderAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryOrderAPI.swift; sourceTree = "<group>"; };
+		22D41759268329510022F959 /* AllOrderAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllOrderAPI.swift; sourceTree = "<group>"; };
+		22D4175B268329EC0022F959 /* NewBuyCoinAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBuyCoinAPI.swift; sourceTree = "<group>"; };
+		22D4175D268329FC0022F959 /* NewSellCoinAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSellCoinAPI.swift; sourceTree = "<group>"; };
+		22D4175F26832A950022F959 /* ParamBuySellCoin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParamBuySellCoin.swift; sourceTree = "<group>"; };
+		22D4176126832D3B0022F959 /* PresenterOder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterOder.swift; sourceTree = "<group>"; };
 		3727538DEB651A1F62B44601 /* Pods-BaseNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseNetwork.release.xcconfig"; path = "Target Support Files/Pods-BaseNetwork/Pods-BaseNetwork.release.xcconfig"; sourceTree = "<group>"; };
 		50DDDCBA4B9E6986178833FB /* Pods_BaseNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B6B17E800D9DCA4CC576CF /* Pods_BaseNetworkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseNetworkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,6 +162,7 @@
 		020FA8C62677B1FE0077C01D /* BaseNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				22D41756268322DB0022F959 /* Order */,
 				020FA8F72677B2440077C01D /* Network */,
 				22476D8F2678A54F00482BE1 /* SpinnerViewController.swift */,
 				22476D8B26789CFE00482BE1 /* BaseVC.swift */,
@@ -202,6 +215,19 @@
 				020FA9022677C18F0077C01D /* ListLectureAPI.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		22D41756268322DB0022F959 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				22D417572683230D0022F959 /* HistoryOrderAPI.swift */,
+				22D41759268329510022F959 /* AllOrderAPI.swift */,
+				22D4175B268329EC0022F959 /* NewBuyCoinAPI.swift */,
+				22D4175D268329FC0022F959 /* NewSellCoinAPI.swift */,
+				22D4175F26832A950022F959 /* ParamBuySellCoin.swift */,
+				22D4176126832D3B0022F959 /* PresenterOder.swift */,
+			);
+			path = Order;
 			sourceTree = "<group>";
 		};
 		97078AEDBE4B7C004328883B /* Pods */ = {
@@ -473,18 +499,24 @@
 				22476D9A2678B31B00482BE1 /* ActivityVC.swift in Sources */,
 				020FA8CC2677B1FE0077C01D /* ViewController.swift in Sources */,
 				22476D8A2678995400482BE1 /* BaseView.swift in Sources */,
+				22D4176026832A950022F959 /* ParamBuySellCoin.swift in Sources */,
 				22476D902678A54F00482BE1 /* SpinnerViewController.swift in Sources */,
+				22D4176226832D3B0022F959 /* PresenterOder.swift in Sources */,
 				020FA9032677C18F0077C01D /* ListLectureAPI.swift in Sources */,
 				22476D8C26789CFE00482BE1 /* BaseVC.swift in Sources */,
 				22476D86267898E800482BE1 /* Presenter.swift in Sources */,
 				020FA9012677C1140077C01D /* ApiErrorResult.swift in Sources */,
+				22D4175A268329510022F959 /* AllOrderAPI.swift in Sources */,
 				020FA8C82677B1FE0077C01D /* AppDelegate.swift in Sources */,
 				22476D8E26789F0800482BE1 /* PresenterNew.swift in Sources */,
 				020FA8CA2677B1FE0077C01D /* SceneDelegate.swift in Sources */,
 				22476D882678992C00482BE1 /* ListView.swift in Sources */,
+				22D4175C268329EC0022F959 /* NewBuyCoinAPI.swift in Sources */,
 				22476D972678AFF600482BE1 /* TableViewCell.swift in Sources */,
+				22D4175E268329FC0022F959 /* NewSellCoinAPI.swift in Sources */,
 				020FA8FD2677BFDE0077C01D /* API.swift in Sources */,
 				020FA8FB2677BAA60077C01D /* ApiUrls.swift in Sources */,
+				22D417582683230D0022F959 /* HistoryOrderAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
